@@ -23,6 +23,19 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+h1, h2 {
+    border-radius: 20px;
+    color: rgb(255, 226, 152);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #stats {
     font-size: 30px;
     text-align: center;
