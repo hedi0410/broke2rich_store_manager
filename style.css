@@ -1,10 +1,27 @@
 html, body {
-    background: linear-gradient(rgb(0, 0, 0), rgb(62, 62, 62));
+    /*background: linear-gradient(rgb(0, 0, 0), rgb(62, 62, 62));*/
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    background-image: url('images/goldenbackground.jpg'); 
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: rgba(255, 239, 148, 0.904);
     height: 100%;
     color: rgb(231, 231, 231);
     gap: 10px;
-    display: flex;
-    flex-direction: column;
+    
+    width: 100vw;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 #stats {
     font-size: 30px;
@@ -12,29 +29,57 @@ html, body {
     width: fit-content;
     margin: 0 auto;
     padding: 10px;
-    border: outset 5px grey;
+    border: outset 2px rgb(247, 247, 247);
     border-radius: 20px;
-    background: border-box radial-gradient( rgb(37, 16, 4), rgb(0, 0, 0));
+    color: white;
+    /*background: border-box radial-gradient( rgb(49, 20, 4), rgb(0, 0, 0));*/
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#main {
+    padding: 20px;
 }
 #game {
-    padding: 20px;
-    border: outset 5px grey;
+    padding: 7px;
+    border: outset 3px rgb(65, 65, 65);
     border-radius: 20px;
-    background: border-box radial-gradient( rgb(81, 36, 8), rgb(28, 18, 1));
+    background: border-box radial-gradient( rgb(43, 43, 43), rgb(0, 0, 0));
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 18px;
 }
 #button1, #button2, #button3, #button4, #button5, #button6 {
-    border: outset 3px;
-    border-radius: 10px;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 14px;
+    border: outset 3px rgb(198, 198, 198);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 15px;
 }
 
 /* display */
 
+#product1Div, #product2Div, #product3Div, #product4Div, #product5Div, #product6Div {
+    background-image: url('images/red.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: solid 2px rgb(170, 170, 170);
+}
+
+#product1Div {
+    display: block;
+}
 #product2Div {
     display: none;
 }
@@ -51,11 +96,25 @@ html, body {
     display: none;
 }
 
+/* text colors */
+
+#product1GainText, #product2GainText, #product3GainText, #product4GainText, #product5GainText, #product6GainText {
+    color: rgba(95, 235, 95, 0.941);
+}
+
+#product1QuantityText, #product2QuantityText, #product3QuantityText, #product4QuantityText, #product5QuantityText, #product6QuantityText {
+    color: rgb(120, 237, 255);
+}
+
+#product1PriceText, #product2PriceText, #product3PriceText, #product4PriceText, #product5PriceText, #product6PriceText {
+    color: rgba(255, 247, 17, 0.964);
+}
+
 /* hover and mobile stuff */
 
 @media (hover: hover) and (pointer: fine) {
     button:hover {
-        background: border-box radial-gradient(rgb(145, 145, 145), rgb(244, 244, 244));
+        background: border-box radial-gradient(rgb(255, 255, 255), rgb(62, 62, 62));
     }
 }
 
@@ -65,6 +124,6 @@ html, body {
         color: unset;
     }
     button:active {
-        background: border-box radial-gradient(rgb(136, 136, 136), rgb(211, 211, 211));
+        background: border-box radial-gradient(rgb(255, 255, 255), rgb(62, 62, 62));
     }
 }
