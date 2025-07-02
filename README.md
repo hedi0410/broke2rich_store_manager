@@ -2,6 +2,8 @@
 A simple business game simulator heavily inspired by AdVenture Capitalist.
 I made it to learn more about Javascript.
 
+![screenshot](images/screenshot.png)
+
 ## How to download
 On MacOS and Linux :
 ```bash
