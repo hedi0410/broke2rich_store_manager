@@ -76,6 +76,8 @@ h1, h2 {
     font-size: 18px;
     margin-left: 35px;
     margin-top: 15px;
+    background: white;
+    color: black;
 }
 
 /* display */
@@ -126,7 +128,7 @@ h1, h2 {
 /* hover and mobile stuff */
 
 @media (hover: hover) and (pointer: fine) {
-    button:hover {
+    #button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover  {
         background: border-box radial-gradient(rgb(255, 255, 255), rgb(62, 62, 62));
     }
 }
@@ -136,7 +138,7 @@ h1, h2 {
         background: unset;
         color: unset;
     }
-    button:active {
+    #button1:active, #button2:active, #button3:active, #button4:active, #button5:active, #button6:active  {
         background: border-box radial-gradient(rgb(255, 255, 255), rgb(62, 62, 62));
     }
 }
