@@ -5,7 +5,9 @@ I made it to learn more about Javascript.
 ![screenshot](images/screenshot.png)
 
 ## How to download
-On MacOS and Linux :
+On MacOs, Windows and Linux: Click Code at the top of the page, and Download zip.
+
+To clone the repository, on MacOS and Linux :
 ```bash
 git clone https://github.com/hedi0410/broke2rich_store_manager.git
 ```
